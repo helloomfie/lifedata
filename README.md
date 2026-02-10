@@ -10,10 +10,16 @@ medical data manager for devs to track their health and their families.
 - export data as csv/json
 
 ## quickstart (local)
-requirements: python 3.12+ and postgres
+if you prefer a different venv path, just activate that instead of .venv.
 
+requirements: python 3.12+ and a running postgres (or docker)
+
+start postgres (docker)
+
+```bash
+docker compose up -d db
+```
 run the server (terminal)
-
 ```bash
 python -m venv .venv
 source .venv/bin/activate
