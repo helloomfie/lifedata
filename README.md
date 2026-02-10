@@ -42,3 +42,6 @@ next:
 - database migrations (accounts, people, memberships)
 - lab results endpoints (create/list)
 - basic export (csv/json)
+
+## license
+mit
