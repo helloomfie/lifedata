@@ -8,3 +8,5 @@ uploads/
 .mypy_cache/
 .ruff_cache/
 .local/
+.vscode/
+.vscode/
