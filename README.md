@@ -19,14 +19,14 @@ start postgres (docker)
 ```bash
 docker compose up -d db
 ```
-run the server (terminal)
+run migrations + server (terminal)
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r manager/requirements.txt
 cd manager
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-
+alembic upgrade head
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 open the api docs (browser)
 - http://localhost:8000/docs
